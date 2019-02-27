@@ -1,0 +1,32 @@
+.material-icons.full { color: rgb(251, 209, 68); }
+.current {
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-weight: 100;
+    line-height: 1;
+    margin-top: 2.5%;
+    margin-left: 2.5%;
+  }
+  .progress-wrapper {
+    position: relative;
+    font-size: 7px;
+  }
+  #custom-tweet-button a {
+    display: block;
+    border: 0px;
+    width: 20%;
+  }
+  #custom-tweet-button a img {
+    width: 40px;
+    margin-right: 5px;
+  }
+  agm-map {
+    height: 300px;
+  }
+  #noRecord {
+    margin-top: 50px;
+  }
+  .nonOutline {
+    background-color: none;
+    border: none;
+  }

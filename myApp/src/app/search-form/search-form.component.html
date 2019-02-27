@@ -1,0 +1,78 @@
+<h5>Entertainment Event Ticket Search</h5>
+<form class="form-horizontal col-sm-12 col-sm-12" novalidate (ngSubmit)="onSubmit()" [formGroup]="profileForm" #formDirective="ngForm">
+  <!--keyword: autocomplete & validation-->
+  <div class="form-group"> 
+    <label for="keyword" class="col-sm-2 col-sm-offset-1 control-label ">Keyword<span style="color: red;">*</span></label>
+    <div class="col-sm-6 col-sm-offset-1">  
+        <input class="form-control" type="text" pattern="[a-zA-Z0-9\s]+" required placeholder="Enter Artist, Team or Event Name (eg. Lakers)" formControlName="keyword" [matAutocomplete]="auto" matInput>
+        <mat-autocomplete #auto="matAutocomplete">
+          <mat-option *ngFor="let option of keywordOptions | async" [value]="option">{{option}}</mat-option>
+        </mat-autocomplete>
+        <div *ngIf="keyword.invalid && (keyword.dirty || keyword.touched)"
+              style="color:#d32121; ">
+          <div *ngIf="keyword.errors.required">
+            Please enter a keyword.
+          </div>
+          <div *ngIf="!keyword.errors.required && keyword.errors.forbiddenName">
+              Please enter a keyword.
+          </div>
+        </div>
+    </div>
+  </div>
+  <!--category: select-->
+  <div class="form-group">
+      <label for="category" class="col-sm-2 col-sm-offset-1 control-label">Category</label>
+      <div class="col-sm-3 col-sm-offset-1">
+        <select id="category" name="category" class="form-control"
+                formControlName="category">
+          <option *ngFor="let c of categorys" [value]="c">{{c}}</option>
+        </select>
+      </div>
+  </div>
+  <!--distance: text & select-->
+  <div class="form-group">
+    <label for="distance" class="col-sm-2 col-sm-offset-1 control-label">Distance</label>
+    <div class="col-sm-3 col-sm-offset-1">
+      <input type="text" class="form-control" id="distance" placeholder="10" name="distance" formControlName="distance">
+    </div>
+    <div class="col-sm-3">
+    <select class="form-control" id="disUnite" name="disUnite" formControlName="disUnite">
+      <option *ngFor="let unit of Units" [value]="unit">{{unit}}</option>
+    </select>
+    </div>
+  </div>
+  <!--from: location-->
+  <div class="form-group">
+    <label for="from" class="col-sm-2 col-sm-offset-1 control-label">From<span style="color: red;">*</span></label>
+    <div class="col-sm-8 col-sm-offset-1">
+      <div class="radio">
+        <label><input type="radio" name="isUserInput" id="current" value="current" checked (click)="disableInput()">Current location</label> 
+      </div>
+      <div class="radio">
+        <label for="specify"><input type="radio" name="isUserInput" id="others" value="other" (click)="enableInput()">Other. Please specify:</label>
+      </div>
+      <div class="col-sm-9">
+        <input type="text" class="form-control" id="specify" required formControlName="location" name="location">
+        <div *ngIf="location.invalid && (location.dirty || location.touched)" style="color:#d32121;">
+          <div *ngIf="location.errors.required">
+            Please enter a location.
+          </div>
+          <div *ngIf="!location.errors.required && location.errors.forbiddenName">
+            Please enter a location.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--button: search & clear-->
+  <div class="form-group">
+    <div class="col-sm-10 col-sm-offset-2">
+      <button type="submit" class="btn btn-primary" id="searchBtn" [disabled]="!this.isGetGeojson || profileForm.invalid"> 
+        <span class="glyphicon glyphicon-search"></span><span style="font-weight:430;">&nbsp; Search</span>
+      </button>
+      <button type="reset" class="btn btn-default" (click)="clear()" style="margin-left: 5px;">
+        <span class="glyphicon glyphicon-align-left" id="clearBtn"></span><span style="font-weight:430;">&nbsp; Clear</span>
+      </button>
+    </div>
+  </div>
+</form>
