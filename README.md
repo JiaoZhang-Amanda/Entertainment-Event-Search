@@ -28,10 +28,10 @@ It's a training project. I created it in order to
 * Once the user clicks on a button to search for event details, the webpage will display several tabs which contain an event info table, artist info table, venue info table, and upcoming events related to this event respectively. 
 * The webpage also support adding events to and removing events from favorites list and posting events info to Twitter.
 
-<B>[An example]<br>
+<B>[An example]</B><br>
 <img height="400" src="https://github.com/JiaoZhang-Amanda/Entertainment-Event-Search/raw/master/Example.gif"/> 
 
-<B>[Related Screenshot]
+<B>[Related Screenshot]</B>
 * Initial Search From:
 <img height="300" src="https://github.com/JiaoZhang-Amanda/Entertainment-Event-Search/raw/master/Screenshot/Initial%20Search%20From.png"/>
 
@@ -44,6 +44,6 @@ It's a training project. I created it in order to
 * Add events to favorite:
 <img height="300" src="https://github.com/JiaoZhang-Amanda/Entertainment-Event-Search/raw/master/Screenshot/Add%20to%20Favorite.png"/><br>
 
-*After Click the Favorite button:
+* After Click the Favorite button:
 <img height="300" src="https://github.com/JiaoZhang-Amanda/Entertainment-Event-Search/raw/master/Screenshot/Favorite%20Form.png"/>
 
