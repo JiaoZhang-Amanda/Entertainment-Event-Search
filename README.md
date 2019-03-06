@@ -35,7 +35,7 @@ It's a training project. I created it in order to
 <img height="300" src="https://github.com/JiaoZhang-Amanda/Entertainment-Event-Search/raw/master/Screenshot/Initial%20Search%20From.png"/>
 
 * Search "Laker":
-<img height="300" src="https://github.com/JiaoZhang-Amanda/Entertainment-Event-Search/raw/master/Screenshot/Initial%20After%20search%20Keyword"Laker".png"/>
+<img height="300" src="https://github.com/JiaoZhang-Amanda/Entertainment-Event-Search/raw/master/Screenshot/Initial%20After%20search%20Keyword%22Laker%22.png"/>
 
 * Click one of the events:
 <img height="300" src="https://github.com/JiaoZhang-Amanda/Entertainment-Event-Search/raw/master/Screenshot/Details.png"/>
