@@ -45,6 +45,3 @@ It's a training project. I created it in order to
 After Click the Favorite button:
 <img height="300" src="https://github.com/JiaoZhang-Amanda/Entertainment-Event-Search/raw/master/Screenshot/Favorite%20Form.png"/>
 
-
-
-
