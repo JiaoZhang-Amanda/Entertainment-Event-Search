@@ -42,7 +42,8 @@ It's a training project. I created it in order to
 
 * Add events to favorite:
 <img height="300" src="https://github.com/JiaoZhang-Amanda/Entertainment-Event-Search/raw/master/Screenshot/Add%20to%20Favorite.png"/><br>
-<img height="300" src="https://github.com/JiaoZhang-Amanda/Entertainment-Event-Search/raw/master/Screenshot/Favorite%20From.png"/>
+After Click the Favorite button:
+<img height="300" src="https://github.com/JiaoZhang-Amanda/Entertainment-Event-Search/raw/master/Screenshot/Favorite%20Form.png"/>
 
 
 
